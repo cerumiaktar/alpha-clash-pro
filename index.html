@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,34 +11,26 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<<<<<<< HEAD
-=======
-<body>
-    <!-- Home Section -->
-    <section class="home">
-        <h1 class="text-4xl font-bold">This is alpha clash pro</h1>
-    </section>
-    <!-- Play Ground Section -->
-    <section class="play-ground">
->>>>>>> adab9d5c61cab52ec315a00aff05135176e79e74
 
 <body class="min-h-screen bg-[#010313] bg-[url('./images/background.png')] bg-no-repeat bg-center">
     <main class="">
         <!-- Home Section -->
-        <section class="home text-[#FFFFFF] flex justify-center items-center min-h-screen hidden">
+        <section id="home" class="home text-[#FFFFFF] flex justify-center items-center min-h-screen">
             <div class="flex flex-col items-center gap-6">
                 <h1 class="text-8xl font-anton">ALPHABET CLASH</h1>
                 <p class="text-xl font-poppins font-medium">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="btn bg-white text-lg font-semibold">Play Now</button>
+                <button onclick="play()" class="btn bg-white text-lg font-semibold">Play Now</button>
             </div>
         </section>
         <!-- Play Ground Section -->
-        <section class="play-ground">
+        <section id="play-ground" class="play-ground hidden">
             <div class="flex flex-col items-center gap-20">
                 <!-- screen -->
-                <div class="artboard artboard-horizontal phone-6 bg-[#FFFFFFB3] border-[20px] border-[#010313CC] rounded-2xl">
+                <div
+                    class="artboard artboard-horizontal phone-6 bg-[#FFFFFFB3] border-[20px] border-[#010313CC] rounded-2xl">
                     <div class="flex justify-center">
-                        <p class="bg-[#2F2941] text-white px-6 py-2 rounded-b-xl text-lg font-medium">Don't watch keyboard  while playing...</p>
+                        <p class="bg-[#2F2941] text-white px-6 py-2 rounded-b-xl text-lg font-medium">Don't watch
+                            keyboard while playing...</p>
                     </div>
                     <div class="flex justify-center items-center h-full">
                         <p class="text-9xl text-black font-bold">Y</p>
@@ -97,14 +89,19 @@
             </div>
         </section>
         <!-- Showing Score Section -->
-        <section class="score">
-
+        <section class=" flex justify-center items-center min-h-screen hidden">
+            <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-6 rounded-lg">
+                <h1 class="text-6xl text-white">
+                    <span class="font-extrabold">Score:</span>
+                    <span>14</span>
+                </h1>
+                <button class="btn text-xl font-semibold">Play Again</button>
+                <p>Practice will make you Pro</p>
+            </div>
         </section>
     </main>
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/alpha-clash.js"></script>
 </body>
-<<<<<<< HEAD
 
 </html>
-=======
-</html>
->>>>>>> adab9d5c61cab52ec315a00aff05135176e79e74
