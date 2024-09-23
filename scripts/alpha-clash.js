@@ -7,7 +7,18 @@
 //     playGround.classList.remove('hidden');
 // }
 
+function continueGame(){
+ const alphabet = getARandomAlphabet();
+ console.log(alphabet);
+
+ const newAlphabet = document.getElementById('current-alphabet');
+ newAlphabet.innerText = alphabet;
+
+ setBackgroundColorById(alphabet);
+}
+
 function play(){
     hideElementById("home");
     showElementById('play-ground');
+    continueGame();
 }
